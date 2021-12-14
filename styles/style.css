@@ -1,0 +1,184 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-items: flex-start;
+  background-color: rgb(241, 241, 241);
+  padding: 10px;
+  box-shadow: #d4d4d4 0 -6px;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+
+.btn {
+  padding: 5px;
+  margin: 10px;
+  background-color: #73c3dc;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: rgb(255, 255, 255) 2px 2px 12px;
+  cursor: pointer;
+  border-bottom: #398ea8 solid 5px;
+}
+
+.btn:hover {
+  background-color: #4cbbdd;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+  font-size: 16px;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(41, 41, 41);
+  font-style: italic;
+  padding: 16px;
+  background-color: rgb(241, 241, 241);
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    display: table;
+    margin: auto;
+  }
+
+  header {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    background-color: rgb(139, 138, 138);
+    grid-template-columns: auto auto auto;
+  }
+
+  .box {
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .btn-div {
+    margin: 20px;
+  }
+
+  .box:nth-of-type(1),
+  .box:nth-of-type(8) {
+    background-color: #6f98a8;
+  }
+
+  .box:nth-of-type(2),
+  .box:nth-of-type(4) {
+    background-color: #2b8ead;
+  }
+
+  .box:nth-of-type(3),
+  .box:nth-of-type(5),
+  .box:nth-of-type(9) {
+    background-color: #2f454e;
+  }
+
+  .box:nth-of-type(6),
+  .box:nth-of-type(7) {
+    background-color: #bfbfbf;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  header {
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    padding: 20px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    background-color: #fff;
+  }
+
+  .btn-div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
+
+  .box {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    margin: 2px;
+    width: 98%;
+  }
+
+  footer {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .box:nth-of-type(1),
+  .box:nth-of-type(8) {
+    border-left: solid 10px #6f98a8;
+  }
+
+  .box:nth-of-type(2),
+  .box:nth-of-type(4) {
+    border-left: solid 10px #2b8ead;
+  }
+
+  .box:nth-of-type(3),
+  .box:nth-of-type(5),
+  .box:nth-of-type(9) {
+    border-left: solid 10px #2f454e;
+  }
+
+  .box:nth-of-type(6),
+  .box:nth-of-type(7) {
+    border-left: solid 10px #bfbfbf;
+  }
+}
+
+
