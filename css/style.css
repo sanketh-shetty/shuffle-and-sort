@@ -21,6 +21,7 @@ body {
 .btn-div {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
  
@@ -36,10 +37,11 @@ body {
   box-shadow: rgb(255, 255, 255) 2px 2px 12px;
   cursor: pointer;
   border-bottom: #398ea8 solid 5px;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn:hover {
-  background-color: #4cbbdd;
+  background-color: #49bbdd;
 }
 
 .box {
@@ -50,6 +52,7 @@ body {
   align-self: center;
   justify-self: center;
   text-align: center;
+
 }
 
 header {
@@ -58,7 +61,7 @@ header {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   color: rgb(41, 41, 41);
   font-style: italic;

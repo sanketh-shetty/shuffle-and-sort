@@ -34,11 +34,15 @@ class Grid {
   init = () => {
     for (let i = 0; i < this.len; i++) {
       this.posArr[i] = i + 1;
-      var node = document.createElement("div");
-      node.textContent = this.posArr[i];
-      node.setAttribute("class", "box");
-      document.querySelector(".container").appendChild(node);
+      this.addCard(this.posArr[i]);
     }
+  };
+
+  addCard = (text) => {
+    var node = document.createElement("div");
+    node.textContent = text;
+    node.setAttribute("class", "box");
+    document.querySelector(".container").appendChild(node);
   };
 
   shuffle = () => {
